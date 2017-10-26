@@ -5,7 +5,12 @@ site_reference_configs.register_from_visit_schedule(
     site_visit_schedules=site_visit_schedules)
 
 configs = {
-    'cancer_subject.adverseevent': ['ae_severity_grade'],
+    'cancer_subject.baseriskassessmentsmoking': [
+        'has_smoked', 'has_worked_mine', 'has_alcohol'],
+    'cancer_subject.baseriskassessmentsmoking': [
+        'has_smoked', 'has_worked_mine', 'has_alcohol'],
+    'cancer_subject.bhhhivtest': ['has_hiv_result'],
+    'cancer_subject.bhhwhoillness': ['had_who_illnesses'],
 }
 
 for reference_name, fields in configs.items():
