@@ -10,18 +10,18 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='ambition-reference',
+    name='cancer-reference',
     version='0.1.0',
     author=u'Leslie Kepaletswe',
     author_email='leslie.kep@gmail.com',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/botswana-harvard/ambition-reference',
+    url='https://github.com/botswana-harvard/cancer-reference',
     license='GPL license, see LICENSE',
-    description='ambition',
+    description='cancer',
     long_description=README,
     zip_safe=False,
-    keywords='ambition',
+    keywords='cancer',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
