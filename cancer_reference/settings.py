@@ -24,10 +24,11 @@ APP_NAME = 'cancer_reference'
 SECRET_KEY = 'e!&^b&7(&)pd4kwmqr@7=axc=qs=a(e)s_13t*=+sg0a*rzzoj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
+ETC_DIR = '/etc'
 
 # Application definition
 
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ambition.apps.AppConfig',
+    #     'ambition.apps.AppConfig',
     'django_crypto_fields.apps.AppConfig',
     'edc_reference.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
