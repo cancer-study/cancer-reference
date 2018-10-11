@@ -5,12 +5,11 @@ site_reference_configs.register_from_visit_schedule(
         'edc_appointment.appointment': 'cancer_subject.subjectvisit'})
 
 configs = {
-    'cancer_subject.baseriskassessmentsmoking': [
+    'cancer_subject.baseriskassessment': [
         'has_smoked', 'has_worked_mine', 'has_alcohol'],
-    'cancer_subject.baseriskassessmentsmoking': [
-        'has_smoked', 'has_worked_mine', 'has_alcohol'],
-    'cancer_subject.bhhhivtest': ['has_hiv_result'],
-    'cancer_subject.bhhwhoillness': ['had_who_illnesses'],
+    'cancer_subject.baselinehivhistory': ['has_hiv_result', 'had_who_illnesses'],
+    'cancer_subject.oncologytreatmentplan': ['radiation_plan'],
+    'cancer_subject.oncologytreatmentrecord': ['radiation_received'],
 }
 
 for reference_name, fields in configs.items():
