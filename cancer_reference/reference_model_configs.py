@@ -10,6 +10,7 @@ configs = {
     'cancer_subject.baselinehivhistory': ['has_hiv_result', 'had_who_illnesses'],
     'cancer_subject.oncologytreatmentplan': ['radiation_plan'],
     'cancer_subject.oncologytreatmentrecord': ['radiation_received'],
+    'cancer_subject.symptomsandtesting': ['hiv_result', 'hiv_test_result']
 }
 
 for reference_name, fields in configs.items():
