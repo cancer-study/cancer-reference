@@ -2,7 +2,7 @@ from edc_reference import site_reference_configs
 
 site_reference_configs.register_from_visit_schedule(
     visit_models={
-        'cancer_subject.appointment': 'cancer_subject.subjectvisit'})
+        'cancer_subject.appointment': ['cancer_subject.subjectvisit']})
 
 configs = {
     'cancer_subject.baseriskassessment': [
