@@ -1,2 +1,2 @@
 # cancer-reference
-Cancer Reference
+Reference model configurations for Cancer
